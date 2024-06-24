@@ -14,7 +14,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
   "/opengraph.jpg",
-  Astro.site
+  Astro.site,
 ).toString();
 
 const { title, footerMargin = true } = Astro.props;
@@ -34,7 +34,7 @@ const makeTitle = title
 
     <SEO
       title={makeTitle}
-      description="Astroship Pro - SAAS & Startup Website Template for Astro built with TailwindCSS."
+      description="Compass & Style - where we "
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
