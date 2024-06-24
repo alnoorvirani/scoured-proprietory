@@ -20,8 +20,8 @@ const resolvedImageWithDomain = new URL(
 const { title, footerMargin = true } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship Pro"
-  : "Astroship Pro - SAAS Startup Website Template for Astro";
+  ? title + " | " + "Compass & Style"
+  : "Compass & Style | Where we take you on an adventure in style";
 ---
 
 <!doctype html>
@@ -34,7 +34,7 @@ const makeTitle = title
 
     <SEO
       title={makeTitle}
-      description="Compass & Style - where we "
+      description="Compass & Style | travel agency focused on you and not the money"
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
@@ -45,11 +45,11 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship Pro - SAAS &Startup Website Template for Astro`,
+          title: `Compass & Style | Where we take you on an adventure in style`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Screenshot",
         },
       }}
     />
