@@ -20,8 +20,8 @@ const resolvedImageWithDomain = new URL(
 const { title, footerMargin = true } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship Pro"
-  : "Astroship Pro - SAAS Startup Website Template for Astro";
+  ? title + " | " + "Compass & Style"
+  : "Compass & Style | Where we take you on an adventure in style";
 ---
 
 <!doctype html>
@@ -34,22 +34,22 @@ const makeTitle = title
 
     <SEO
       title={makeTitle}
-      description="Astroship Pro - SAAS & Startup Website Template for Astro built with TailwindCSS."
+      description="Compass & Style | Where we take you on an adventure in style"
       canonical={canonicalURL}
       twitter={{
-        creator: "@surjithctly",
-        site: "@web3templates",
+        creator: "@thenameisalnoor",
+        site: "@compassandstyle.com",
         card: "summary_large_image",
       }}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship Pro - SAAS &Startup Website Template for Astro`,
+          title: `Compass & Style | Where we take you on an adventure in style`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Screenshot",
         },
       }}
     />
