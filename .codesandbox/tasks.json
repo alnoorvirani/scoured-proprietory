@@ -19,23 +19,19 @@
     },
     "start": {
       "name": "start",
-      "command": "pnpm start",
-      "runAtStart": false
+      "command": "pnpm start"
     },
     "build": {
       "name": "build",
-      "command": "pnpm build",
-      "runAtStart": false
+      "command": "pnpm build"
     },
     "preview": {
       "name": "preview",
-      "command": "pnpm preview",
-      "runAtStart": false
+      "command": "pnpm preview"
     },
     "astro": {
       "name": "astro",
-      "command": "pnpm astro",
-      "runAtStart": false
+      "command": "pnpm astro"
     }
   }
 }

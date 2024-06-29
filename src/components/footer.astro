@@ -4,7 +4,7 @@ import { Icon } from "astro-icon/components";
 
 const { margin } = Astro.props;
 
-const footermenu = {
+/*const footermenu = {
   company: [
     {
       title: "About",
@@ -61,7 +61,7 @@ const footermenu = {
   ],
 };
 ---
-
+*/
 <footer
   class:list={[
     "py-14 bg-slate-100 border-t border-slate-100",
@@ -71,14 +71,12 @@ const footermenu = {
   <Container>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
       <div class="sm:col-span-2 md:col-span-3 lg:col-span-2">
-        <a href="/" class="text-lg flex items-center"
-          ><span class="font-bold text-indigo-600">Compass</span>&<span
-            class="text-slate-600">Style</span
-          >
-          <span
-            class="uppercase mt-0.5 leading-none text-[10px] ml-1 font-bold bg-gray-200 text-slate-700 px-2 py-1 rounded-md"
-            >TravelPros</span
-          >
+        <a href="/" class="text-lg flex items-center">
+          <span class="font-bold text-indigo-600">Compass</span>&
+          <span class="text-slate-600">Style</span>
+          <span class="uppercase mt-0.5 leading-none text-[10px] ml-1 font-bold bg-gray-200 text-slate-700 px-2 py-1 rounded-md">
+            TravelPros
+          </span>
         </a>
         <p class="mt-4 text-sm text-slate-700 max-w-xs">
           We stand by our promise to take care of you from home to neverland and
@@ -86,79 +84,71 @@ const footermenu = {
         </p>
         <div class="flex gap-3 mt-4 items-center">
           <a
-            href="https://twitter.com/surjithctly"
+            href="https://twitter.com/compassandstyle"
             target="_blank"
             rel="noopener noreferrer"
             class="bg-slate-200 hover:bg-slate-300 rounded w-6 h-6 inline-flex items-center justify-center text-slate-500"
           >
             <Icon name="bx:bxl-twitter" class="w-4 h-4" />
-            <span class="sr-only">Twitter or X</span></a
-          >
+            <span class="sr-only">X formerly Twitter</span>
+          </a>
           <a
-            href="https://facebook.com/"
+            href="https://facebook.com/compassandstyle"
             target="_blank"
             rel="noopener noreferrer"
             class="bg-slate-200 hover:bg-slate-300 rounded w-6 h-6 inline-flex items-center justify-center text-slate-500"
           >
-            <Icon name="bx:bxl-facebook-circle" class="w-4 h-4" /><span
-              class="sr-only">Facebook</span
-            ></a
-          >
+            <Icon name="bx:bxl-facebook-circle" class="w-4 h-4" />
+            <span class="sr-only">Facebook</span>
+          </a>
           <a
-            href="https://linkedin.com/"
+            href="https://linkedin.com/company/compassandstyle"
             target="_blank"
             rel="noopener noreferrer"
             class="bg-slate-200 hover:bg-slate-300 rounded w-6 h-6 inline-flex items-center justify-center text-slate-500"
           >
-            <Icon name="bx:bxl-linkedin-square" class="w-4 h-4" /><span
-              class="sr-only">Linkedin</span
-            ></a
-          >
+            <Icon name="bx:bxl-linkedin-square" class="w-4 h-4" />
+            <span class="sr-only">Linkedin</span>
+          </a>
         </div>
       </div>
       <div>
         <h3 class="font-medium text-sm text-slate-800">Company</h3>
         <div class="flex flex-col mt-3">
-          {
-            footermenu.company.map((item) => (
-              <a
-                href={item.path || "#"}
-                class="py-2 text-sm text-slate-600 hover:text-indigo-600"
-              >
-                {item.title}
-              </a>
-            ))
-          }
+          {footermenu.company.map((item) => (
+            <a
+              href={item.path || "#"}
+              class="py-2 text-sm text-slate-600 hover:text-indigo-600"
+            >
+              {item.title}
+            </a>
+          ))}
         </div>
       </div>
       <div>
         <h3 class="font-medium text-sm text-slate-800">Product</h3>
         <div class="flex flex-col mt-3">
-          {
-            footermenu.product.map((item) => (
-              <a
-                href={item.path || "#"}
-                class="py-2 text-sm text-slate-600 hover:text-indigo-600"
-              >
-                {item.title}
-              </a>
-            ))
-          }
+          {footermenu.product.map((item) => (
+            <a
+              href={item.path || "#"}
+              class="py-2 text-sm text-slate-600 hover:text-indigo-600"
+            >
+              {item.title}
+            </a>
+          ))}
         </div>
       </div>
       <div>
         <h3 class="font-medium text-sm text-slate-800">Resources</h3>
         <div class="flex flex-col mt-3">
-          {
-            footermenu.resources.map((item) => (
-              <a
-                href={item.path || "#"}
-                class="py-2 text-sm text-slate-600 hover:text-indigo-600"
-              >
-                {item.title}
-              </a>
-            ))
-          }
+          {footermenu.resources.map((item) => (
+            <a
+              href={item.path || "#"}
+              class="py-2 text-sm text-slate-600 hover:text-indigo-600"
+            >
+              {item.title}
+            </a>
+          ))}
         </div>
       </div>
     </div>
@@ -171,13 +161,16 @@ const footermenu = {
         reserved.
       </p>
       <p class="text-center text-xs text-slate-600 mt-2">
-        <a href="/terms" class="hover:text-indigo-500"> Terms</a> ・ <a
-          href="/privacy"
-          class="hover:text-indigo-500"
-        >
-          Privacy</a
-        >
+        <a href="/terms" class="hover:text-indigo-500">
+          {" "}
+          Terms
+        </a>{" "}
+        ・{" "}
+        <a href="/privacy" class="hover:text-indigo-500">
+          Privacy
+        </a>
       </p>
     </Container>
   </div>
-</footer>
+</footer>;
+---
