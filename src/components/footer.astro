@@ -7,12 +7,8 @@ const { margin } = Astro.props;
 const footermenu = {
   company: [
     {
-      title: "About",
+      title: "About Compass & Style",
       path: "/about",
-    },
-    {
-      title: "Destinations",
-      path: "/destinations",
     },
     {
       title: "Blog",
@@ -25,16 +21,16 @@ const footermenu = {
   ],
   product: [
     {
-      title: "For Startups",
-      path: "#",
+      title: "Destinations",
+      path: "/destinations",
     },
     {
-      title: "Features",
-      path: "#",
+      title: "Some Brands We Work With",
+      path: "/brands",
     },
     {
-      title: "Pricing",
-      path: "/pricing",
+      title: "Packages We Offer",
+      path: "/packages",
     },
     {
       title: "Integrations",
@@ -86,7 +82,7 @@ const footermenu = {
         </p>
         <div class="flex gap-3 mt-4 items-center">
           <a
-            href="https://twitter.com/surjithctly"
+            href="https://x.com/compassandstyle"
             target="_blank"
             rel="noopener noreferrer"
             class="bg-slate-200 hover:bg-slate-300 rounded w-6 h-6 inline-flex items-center justify-center text-slate-500"
@@ -95,7 +91,7 @@ const footermenu = {
             <span class="sr-only">Twitter or X</span></a
           >
           <a
-            href="https://facebook.com/"
+            href="https://facebook.com/compassandstyle"
             target="_blank"
             rel="noopener noreferrer"
             class="bg-slate-200 hover:bg-slate-300 rounded w-6 h-6 inline-flex items-center justify-center text-slate-500"
@@ -105,7 +101,7 @@ const footermenu = {
             ></a
           >
           <a
-            href="https://linkedin.com/"
+            href="https://linkedin.com/company/compassandstyle"
             target="_blank"
             rel="noopener noreferrer"
             class="bg-slate-200 hover:bg-slate-300 rounded w-6 h-6 inline-flex items-center justify-center text-slate-500"
@@ -146,11 +142,12 @@ const footermenu = {
           }
         </div>
       </div>
-      <div>
+      <!--<div>
         <h3 class="font-medium text-sm text-slate-800">Resources</h3>
-        <div class="flex flex-col mt-3">
-          {
-            footermenu.resources.map((item) => (
+        <div class="flex flex-col mt-3">-->
+      {
+        (
+          /*footermenu.resources.map((item) => (
               <a
                 href={item.path || "#"}
                 class="py-2 text-sm text-slate-600 hover:text-indigo-600"
@@ -162,22 +159,29 @@ const footermenu = {
         </div>
       </div>
     </div>
+          }*/ <div class="mt-14 pt-8 px-5 border-t border-slate-200">
+            <Container>
+              <p class="text-center text-sm text-slate-600 [text-wrap:balance]">
+                Copyright © {new Date().getFullYear()} Compass & Style. All
+                rights reserved.
+              </p>
+              <p class="text-center text-xs text-slate-600 mt-2">
+                <a href="/terms" class="hover:text-indigo-500">
+                  {" "}
+                  Terms
+                </a>{" "}
+                ・{" "}
+                <a href="/privacy" class="hover:text-indigo-500">
+                  Privacy
+                </a>
+              </p>
+            </Container>
+          </div>
+        )
+      }
+    </div>
   </Container>
-
-  <div class="mt-14 pt-8 px-5 border-t border-slate-200">
-    <Container>
-      <p class="text-center text-sm text-slate-600 [text-wrap:balance]">
-        Copyright © {new Date().getFullYear()} Compass & Style. All rights
-        reserved.
-      </p>
-      <p class="text-center text-xs text-slate-600 mt-2">
-        <a href="/terms" class="hover:text-indigo-500"> Terms</a> ・ <a
-          href="/privacy"
-          class="hover:text-indigo-500"
-        >
-          Privacy</a
-        >
-      </p>
-    </Container>
-  </div>
 </footer>
+
+ -->
+
