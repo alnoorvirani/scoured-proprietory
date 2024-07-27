@@ -8,7 +8,7 @@ import Link from "@components/ui/link.astro";
 import EmployeeImg from "../assets/employee.jpg";
 import Logos from "@components/logos.astro";
 import { Icon } from "astro-icon/components";
-import Cta from "@components/cta.astro";
+import CTA from '@components/cta.astro';
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -16,108 +16,37 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 });
 ---
 
-<Layout title="Why A Travel Agent" footerMargin={false}>
-  <Container>
-    <Sectionhead>
-      <Fragment slot="badge">Why A Travel Advisor</Fragment>
-      <Fragment slot="title">We Build Your Journey with Care</Fragment>
-      <Fragment slot="desc">
-        Planning a trip can be an exciting yet daunting task. With so many options available online, you might wonder why you should consider booking with a travel agency. Here are several compelling reasons to choose a travel agency for your next adventure.
-      </Fragment>
-    </Sectionhead>
-    <div class="mt-6 text-center">
-      <Link style="outline" size="sm" href="#" target="_blank" rel="noopener">
-        Learn more →
-      </Link>
-    </div>
-    <div class="mt-16 border-y py-6 border-slate-100">
-      <Logos />
-    </div>
+<Layout title="Why Choose a Travel Agent | Compass & Style">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">Why Choose a Travel Agent?</h1>
 
-    <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24">
-      <div class="relative">
-        <div
-          class="absolute hidden md:block w-96 h-96 bg-purple-100 rounded-full right-0 top-1/3 -z-10"
-        >
-        </div>
-        <div
-          class="absolute hidden md:block w-44 h-44 bg-purple-100 rounded-full left-10 top-1/4 -z-10"
-        >
-        </div>
-        <Picture
-          formats={["avif", "webp"]}
-          src={EmployeeImg}
-          alt="Happy Team"
-          class="rounded-xl w-full max-w-md mx-auto shadow-2xl"
-          loading="lazy"
-        />
-      </div>
-      <div class="place-self-center">
-        <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
-          <span class="text-indigo-600">Our</span>
-          {" "}
-          <strong>Mission</strong>
-        </h2>
-        <p class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500">
-          Booking with a travel agency offers numerous benefits, from expert advice to personalized service and cost savings. By choosing a travel agency, you can enjoy a stress-free and memorable travel experience. So, the next time you're planning a trip, consider the advantages of booking with a travel agency and make your journey truly unforgettable.
-        </p>
-        <ul class="grid mt-6 text-left gap-y-4">
-          <li class="flex items-center gap-3 text-slate-800">
-            <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+    <p class="text-xl mb-6">At Compass & Style, we're not just travel advisors – we're your partners in creating unforgettable, neurodiversity-friendly adventures. Here's why choosing us makes all the difference:</p>
+    
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Expertise in Neurodiversity-Friendly Travel</h2>
+      <p>At Compass & Style, we don't just understand neurodiversity – we celebrate it. Our team's specialized knowledge ensures your journey is tailored to your unique comfort levels and preferences. Whether you need quiet spaces, sensory-friendly accommodations, or flexible itineraries, we've got you covered.</p>
+    </section>
 
-            <span class="text-slate-600">Expertise & Knowledge</span>
-          </li>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Time and Stress Savings</h2>
+      <p>Imagine focusing on the excitement of your upcoming adventure, without the overwhelm of planning. That's what we offer. We navigate the maze of travel options, handle the bookings, and manage the details. You just pack your bags and get ready for an amazing journey.</p>
+    </section>
 
-          <li class="flex items-center gap-3 text-slate-800">
-            <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+    <section class="mb-8">
+  <h2 class="text-2xl font-semibold mb-4">Personalized Itineraries</h2>
+  <p>Your travel experience should be as unique as you are. We craft bespoke itineraries that cater to your interests, sensory needs, and desired pace of travel.</p>
+</section>
 
-            <span class="text-slate-600">Access to Exclusive Perks</span>
-          </li>
+<section class="mb-8">
+  <h2 class="text-2xl font-semibold mb-4">Access to Exclusive Deals and Experiences</h2>
+  <p>Benefit from our industry connections to enjoy special rates and unique experiences that aren't available to the general public.</p>
+</section>
 
-          <li class="flex items-center gap-3 text-slate-800">
-            <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+<section class="mb-8">
+  <h2 class="text-2xl font-semibold mb-4">Support Throughout Your Journey</h2>
+  <p>From the moment you start planning until you return home, we're here for you. Our 24/7 support ensures peace of mind throughout your travels.</p>
+</section>
 
-            <span class="text-slate-600">Support & Assistance</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="mt-24">
-      <h2 class="text-4xl lg:text-5xl lg:tracking-tight text-center">
-        Core <span class="text-indigo-600 font-bold">Team</span>
-      </h2>
-      <p class="text-lg mt-4 text-slate-600 text-center">
-        Astroship is built by these awesome individuals.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-4 gap-10 mx-auto mt-12">
-      {
-        publishedTeamMembers.map((teamMemberEntry) => (
-          <div class="group">
-            <div class="w-full aspect-square">
-              <Picture
-                src={teamMemberEntry?.data?.avatar?.src}
-                alt={teamMemberEntry?.data?.avatar?.alt || "Team Member"}
-                loading="lazy"
-                width={400}
-                height={400}
-                formats={["avif", "webp"]}
-                class="w-full h-full object-cover bg-white rounded transition group-hover:-translate-y-1 group-hover:shadow-xl"
-              />
-            </div>
-
-            <div class="mt-4 text-center">
-              <h2 class="text-lg text-gray-800">{teamMemberEntry.data.name}</h2>
-              <h3 class="text-sm text-slate-500">
-                {teamMemberEntry.data.title}
-              </h3>
-            </div>
-          </div>
-        ))
-      }
-    </div>
-  </Container>
-  <Cta />
+  <CTA text="Ready to start your journey?" buttonText="Book a Consultation" />
+  </main>
 </Layout>
