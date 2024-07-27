@@ -8,7 +8,7 @@ import Link from "@components/ui/link.astro";
 import EmployeeImg from "../assets/employee.jpg";
 import Logos from "@components/logos.astro";
 import { Icon } from "astro-icon/components";
-import CTA from '@components/cta.astro';
+import CTA from "@components/cta.astro";
 
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -20,33 +20,64 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
   <main class="container mx-auto px-4 py-8">
     <h1 class="text-3xl font-bold mb-6">Why Choose a Travel Agent?</h1>
 
-    <p class="text-xl mb-6">At Compass & Style, we're not just travel advisors – we're your partners in creating unforgettable, neurodiversity-friendly adventures. Here's why choosing us makes all the difference:</p>
-    
+    <p class="text-xl mb-6">
+      Discover stress-free, personalized travel experiences tailored to your
+      unique needs. Our expert agents create unforgettable journeys while
+      providing support every step of the way.
+    </p>
+
     <section class="mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Expertise in Neurodiversity-Friendly Travel</h2>
-      <p>At Compass & Style, we don't just understand neurodiversity – we celebrate it. Our team's specialized knowledge ensures your journey is tailored to your unique comfort levels and preferences. Whether you need quiet spaces, sensory-friendly accommodations, or flexible itineraries, we've got you covered.</p>
+      <h2 class="text-2xl font-semibold mb-4">
+        Expertise in Neurodiversity-Friendly Travel
+      </h2>
+      <p>
+        At Compass & Style, we don't just understand neurodiversity – we
+        celebrate it. Our team's specialized knowledge ensures your journey is
+        tailored to your unique comfort levels and preferences. Whether you need
+        quiet spaces, sensory-friendly accommodations, or flexible itineraries,
+        we've got you covered.
+      </p>
     </section>
 
     <section class="mb-8">
       <h2 class="text-2xl font-semibold mb-4">Time and Stress Savings</h2>
-      <p>Imagine focusing on the excitement of your upcoming adventure, without the overwhelm of planning. That's what we offer. We navigate the maze of travel options, handle the bookings, and manage the details. You just pack your bags and get ready for an amazing journey.</p>
+      <p>
+        Imagine focusing on the excitement of your upcoming adventure, without
+        the overwhelm of planning. That's what we offer. We navigate the maze of
+        travel options, handle the bookings, and manage the details. You just
+        pack your bags and get ready for an amazing journey.
+      </p>
     </section>
 
     <section class="mb-8">
-  <h2 class="text-2xl font-semibold mb-4">Personalized Itineraries</h2>
-  <p>Your travel experience should be as unique as you are. We craft bespoke itineraries that cater to your interests, sensory needs, and desired pace of travel.</p>
-</section>
+      <h2 class="text-2xl font-semibold mb-4">Personalized Itineraries</h2>
+      <p>
+        Your travel experience should be as unique as you are. We craft bespoke
+        itineraries that cater to your interests, sensory needs, and desired
+        pace of travel.
+      </p>
+    </section>
 
-<section class="mb-8">
-  <h2 class="text-2xl font-semibold mb-4">Access to Exclusive Deals and Experiences</h2>
-  <p>Benefit from our industry connections to enjoy special rates and unique experiences that aren't available to the general public.</p>
-</section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">
+        Access to Exclusive Deals and Experiences
+      </h2>
+      <p>
+        Benefit from our industry connections to enjoy special rates and unique
+        experiences that aren't available to the general public.
+      </p>
+    </section>
 
-<section class="mb-8">
-  <h2 class="text-2xl font-semibold mb-4">Support Throughout Your Journey</h2>
-  <p>From the moment you start planning until you return home, we're here for you. Our 24/7 support ensures peace of mind throughout your travels.</p>
-</section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">
+        Support Throughout Your Journey
+      </h2>
+      <p>
+        From the moment you start planning until you return home, we're here for
+        you. Our 24/7 support ensures peace of mind throughout your travels.
+      </p>
+    </section>
 
-  <CTA text="Ready to start your journey?" buttonText="Book a Consultation" />
+    <CTA text="Ready to start your journey?" buttonText="Book a Consultation" />
   </main>
 </Layout>

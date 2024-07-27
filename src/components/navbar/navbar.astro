@@ -6,29 +6,33 @@ import { StickyHeader, Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
+    title: "Home",
+    path: "/",
+  },
+  {
     title: "Destinations",
     path: "/destinations",
-    children: [
-      { title: "The Americas", path: "/the-americas" },
-      { title: "Asia & Pacific Islands", path: "/asia-pacific-islands" },
-      {
-        title: "Africa",
-        path: "/africa",
-      },
-      // { title: "404 Page", path: "/404" },
-    ],
+    //children: [
+    //{ title: "The Americas", path: "/the-americas" },
+    //{ title: "Asia & Pacific Islands", path: "/asia-pacific-islands" },
+    //{
+    //  title: "Africa",
+    //  path: "/africa",
+    //},
+    // { title: "404 Page", path: "/404" },
+    //],
   },
   {
-    title: "Deals of The Web",
-    path: "/deals-of-the-web",
+    title: "Our Services",
+    path: "/our-services",
   },
   {
-    title: "About Compass & Style",
+    title: "Inclusive Travel",
+    path: "/inclusive-travel",
+  },
+  {
+    title: "About Us",
     path: "/about",
-  },
-  {
-    title: "Yours and Our Travel Stories",
-    path: "/blog",
   },
   {
     title: "Contact Us",
@@ -99,33 +103,16 @@ const menuitems = [
           </div>
         </MenuItems>
       </Astronav>
-      <div>
-        <div class="hidden lg:flex items-center gap-4">
-          <a
-            href="#"
-            class="text-sm px-2 py-1 transition focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo rounded-full"
-            >Log in</a
-          >
-          <Link
-            href="#"
-            size="sm"
-            class="inline-flex items-center group gap-px"
-          >
-            <span>Try for Free</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </Link>
-        </div>
-      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform"
+      ></svg>
+      <path
+        fill-rule="evenodd"
+        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+        clip-rule="evenodd"></path>
     </div>
   </Container>
 </StickyHeader>
