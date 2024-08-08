@@ -4,23 +4,24 @@
 
 <form class="travel-request-form" netlify>
   <section>
-    <h2>Personal Information</h2>
-    <input type="text" name="name" placeholder="Name" required />
-    <label for="communication">Preferred Communication Method:</label>
+    <h1>Travel Request Form</h1>
+    <label for="first-name">
+      First Name:
+      <input type="text" name="First Name" />
+    </label>
+    <label for="last-name">
+      Last Name:
+      <input type="text" name="Last Name" />
+    </label>
+    <label for="communication"> Preferred Communication Method:</label>
     <select id="communication" name="communication">
       <option value="email">Email</option>
       <option value="phone">Phone</option>
       <option value="text">Text Message</option>
+      <option value="text">Mail (we're kidding)</option>
     </select>
-    <label for="dietary">Dietary Requirements:</label>
+    <label for="dietary"> Dietary Requirements:</label>
     <textarea id="dietary" name="dietary"></textarea>
-    <textarea id="accommodation" name="Accommodation"></textarea>
-    <label for="communication">Preferred Communication Method:</label>
-    <select id="communication" name="communication">
-      <option value="email">Email</option>
-      <option value="phone">Phone</option>
-      <option value="text">Text Message</option>
-    </select>
     <!-- Add more fields here -->
     <button type="submit">Submit Request</button>
   </section>
@@ -58,5 +59,4 @@
       cursor: pointer;
     }
   </style>
-  <button type="submit">Submit Inquiry</button>
 </form>
