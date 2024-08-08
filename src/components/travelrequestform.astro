@@ -2,72 +2,61 @@
 // Any Astro-specific logic can go here
 ---
 
-<form class="travel-request-form">
+<form class="travel-request-form" netlify>
   <section>
     <h2>Personal Information</h2>
     <input type="text" name="name" placeholder="Name" required />
+    <label for="communication">Preferred Communication Method:</label>
+    <select id="communication" name="communication">
+      <option value="email">Email</option>
+      <option value="phone">Phone</option>
+      <option value="text">Text Message</option>
+    </select>
+    <label for="dietary">Dietary Requirements:</label>
+    <textarea id="dietary" name="dietary"></textarea>
+    <textarea id="accommodation" name="Accommodation"></textarea>
+    <label for="communication">Preferred Communication Method:</label>
+    <select id="communication" name="communication">
+      <option value="email">Email</option>
+      <option value="phone">Phone</option>
+      <option value="text">Text Message</option>
+    </select>
     <!-- Add more fields here -->
+    <button type="submit">Submit Request</button>
   </section>
 
-  <!-- Repeat for each section of the form -->
+  <style>
+    /* Add your styles here */
+    .travel-inquiry-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+    }
 
-  <button type="submit">Submit Request</button>
+    .travel-inquiry-form label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    .travel-inquiry-form input,
+    .travel-inquiry-form textarea,
+    .travel-inquiry-form select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+
+    .travel-inquiry-form button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: var(--soft-green);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+  <button type="submit">Submit Inquiry</button>
 </form>
-
-<style>
-  /* Add your styles here */
-</style>
-rea id="sensory-needs" name="sensory-needs"></textarea>
-
-  <label for="communication">Preferred Communication Method:</label>
-  <select id="communication" name="communication">
-    <option value="email">Email</option>
-    <option value="phone">Phone</option>
-    <option value="text">Text Message</option>
-  </select>
-
-  <label for="dietary">Dietary Requirements:</label>
-  <textarea id="dietary" name="dietary"></textarea>
-
-  <label for="accommodation">Accommodation Preferences:</label>
-  <textarea id="accommodation" name="accommodation"></textarea>
-    <!-- Add more fields here -->
-  </section>
-
-  <!-- Repeat for each section of the form -->
-
-<style>
-  /* Add your styles here */
-  .travel-inquiry-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-  }
-
-  .travel-inquiry-form label {
-    display: block;
-    margin-top: 15px;
-  }
-
-  .travel-inquiry-form input,
-  .travel-inquiry-form textarea,
-  .travel-inquiry-form select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-  }
-
-  .travel-inquiry-form button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: var(--soft-green);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-</style>
-<button type="submit">Submit Inquiry</button>
-  </form>
