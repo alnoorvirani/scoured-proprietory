@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\avira\\source\\repos\\alnoorvirani\\scoured-proprietory\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\avira\\source\\repos\\alnoorvirani\\scoured-proprietory\\src\\pages\\destinations.astro||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\destinations.astro||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\avira\\source\\repos\\alnoorvirani\\scoured-proprietory\\src\\pages\\book-with-us.astro||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\book-with-us.astro||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\avira\\source\\repos\\alnoorvirani\\scoured-proprietory\\src\\pages\\our-services.astro||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\our-services.astro||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\avira\\source\\repos\\alnoorvirani\\scoured-proprietory\\src\\pages\\why-a-travel-agent.astro||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\why-a-travel-agent.astro||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
@@ -19,12 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "destinations.astro",
+              "DocumentMoniker": "C:\\Users\\avira\\source\\repos\\alnoorvirani\\scoured-proprietory\\src\\pages\\destinations.astro",
+              "RelativeDocumentMoniker": "src\\pages\\destinations.astro",
+              "ToolTip": "C:\\Users\\avira\\source\\repos\\alnoorvirani\\scoured-proprietory\\src\\pages\\destinations.astro",
+              "RelativeToolTip": "src\\pages\\destinations.astro",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-02T14:50:01.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "book-with-us.astro",
+              "DocumentMoniker": "C:\\Users\\avira\\source\\repos\\alnoorvirani\\scoured-proprietory\\src\\pages\\book-with-us.astro",
+              "RelativeDocumentMoniker": "src\\pages\\book-with-us.astro",
+              "ToolTip": "C:\\Users\\avira\\source\\repos\\alnoorvirani\\scoured-proprietory\\src\\pages\\book-with-us.astro",
+              "RelativeToolTip": "src\\pages\\book-with-us.astro",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-02T14:49:47.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "our-services.astro",
+              "DocumentMoniker": "C:\\Users\\avira\\source\\repos\\alnoorvirani\\scoured-proprietory\\src\\pages\\our-services.astro",
+              "RelativeDocumentMoniker": "src\\pages\\our-services.astro",
+              "ToolTip": "C:\\Users\\avira\\source\\repos\\alnoorvirani\\scoured-proprietory\\src\\pages\\our-services.astro",
+              "RelativeToolTip": "src\\pages\\our-services.astro",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-02T14:49:02.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "why-a-travel-agent.astro",
               "DocumentMoniker": "C:\\Users\\avira\\source\\repos\\alnoorvirani\\scoured-proprietory\\src\\pages\\why-a-travel-agent.astro",
               "RelativeDocumentMoniker": "src\\pages\\why-a-travel-agent.astro",
               "ToolTip": "C:\\Users\\avira\\source\\repos\\alnoorvirani\\scoured-proprietory\\src\\pages\\why-a-travel-agent.astro",
               "RelativeToolTip": "src\\pages\\why-a-travel-agent.astro",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-08-28T04:02:17.174Z",
               "EditorCaption": ""
