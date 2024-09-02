@@ -4,7 +4,7 @@ title: "Role of Travel Industry in Neurospicy World"
 snippet: "Explore how hotels are evolving travel space for neurodivergents"
 image:
   {
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?fit=crop&w=600&h=335",
+    src: "https://images.unsplash.com/photo-1618865212965-5fd43d7fdece?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "alt text",
   }
 publishDate: "2023-08-06 13:55"
